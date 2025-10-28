@@ -54,7 +54,7 @@ build CMakeFiles/StudyTest.dir/Core/Src/main.c.obj: C_COMPILER__StudyTest_unscan
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Core\Src\main.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Core\Src
 
@@ -63,7 +63,7 @@ build CMakeFiles/StudyTest.dir/Core/Src/gpio.c.obj: C_COMPILER__StudyTest_unscan
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Core\Src\gpio.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Core\Src
 
@@ -72,7 +72,7 @@ build CMakeFiles/StudyTest.dir/Core/Src/adc.c.obj: C_COMPILER__StudyTest_unscann
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Core\Src\adc.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Core\Src
 
@@ -81,7 +81,7 @@ build CMakeFiles/StudyTest.dir/Core/Src/dma.c.obj: C_COMPILER__StudyTest_unscann
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Core\Src\dma.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Core\Src
 
@@ -90,7 +90,7 @@ build CMakeFiles/StudyTest.dir/Core/Src/i2c.c.obj: C_COMPILER__StudyTest_unscann
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Core\Src\i2c.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Core\Src
 
@@ -99,7 +99,7 @@ build CMakeFiles/StudyTest.dir/Core/Src/spi.c.obj: C_COMPILER__StudyTest_unscann
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Core\Src\spi.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Core\Src
 
@@ -108,7 +108,7 @@ build CMakeFiles/StudyTest.dir/Core/Src/tim.c.obj: C_COMPILER__StudyTest_unscann
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Core\Src\tim.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Core\Src
 
@@ -117,7 +117,7 @@ build CMakeFiles/StudyTest.dir/Core/Src/usart.c.obj: C_COMPILER__StudyTest_unsca
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Core\Src\usart.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Core\Src
 
@@ -126,7 +126,7 @@ build CMakeFiles/StudyTest.dir/Core/Src/stm32h7xx_it.c.obj: C_COMPILER__StudyTes
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Core\Src\stm32h7xx_it.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Core\Src
 
@@ -135,7 +135,7 @@ build CMakeFiles/StudyTest.dir/Core/Src/stm32h7xx_hal_msp.c.obj: C_COMPILER__Stu
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Core\Src\stm32h7xx_hal_msp.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Core\Src
 
@@ -144,7 +144,7 @@ build CMakeFiles/StudyTest.dir/Core/Src/sysmem.c.obj: C_COMPILER__StudyTest_unsc
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Core\Src\sysmem.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Core\Src
 
@@ -153,7 +153,7 @@ build CMakeFiles/StudyTest.dir/Core/Src/syscalls.c.obj: C_COMPILER__StudyTest_un
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Core\Src\syscalls.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Core\Src
 
@@ -162,7 +162,7 @@ build CMakeFiles/StudyTest.dir/startup_stm32h750xx.s.obj: ASM_COMPILER__StudyTes
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\startup_stm32h750xx.s.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -x assembler-with-cpp -MMD -MP -g
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir
 
@@ -171,7 +171,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/OLED.c.obj: C_COMPILER__StudyTes
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\OLED.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -180,7 +180,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/mui.c.obj: C_COMPILER__StudyTest
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\mui.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -189,7 +189,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/mui_u8g2.c.obj: C_COMPILER__Stud
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\mui_u8g2.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -198,7 +198,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_arc.c.obj: C_COMPILER__Stud
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8g2_arc.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -207,7 +207,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_bitmap.c.obj: C_COMPILER__S
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8g2_bitmap.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -216,7 +216,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_box.c.obj: C_COMPILER__Stud
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8g2_box.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -225,7 +225,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_buffer.c.obj: C_COMPILER__S
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8g2_buffer.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -234,7 +234,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_button.c.obj: C_COMPILER__S
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8g2_button.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -243,7 +243,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_circle.c.obj: C_COMPILER__S
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8g2_circle.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -252,7 +252,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_cleardisplay.c.obj: C_COMPI
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8g2_cleardisplay.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -261,7 +261,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_d_memory.c.obj: C_COMPILER_
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8g2_d_memory.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -270,7 +270,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_d_setup.c.obj: C_COMPILER__
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8g2_d_setup.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -279,7 +279,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_font.c.obj: C_COMPILER__Stu
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8g2_font.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -288,7 +288,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_fonts.c.obj: C_COMPILER__St
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8g2_fonts.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -297,7 +297,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_hvline.c.obj: C_COMPILER__S
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8g2_hvline.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -306,7 +306,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_input_value.c.obj: C_COMPIL
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8g2_input_value.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -315,7 +315,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_intersection.c.obj: C_COMPI
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8g2_intersection.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -324,7 +324,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_kerning.c.obj: C_COMPILER__
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8g2_kerning.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -333,7 +333,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_line.c.obj: C_COMPILER__Stu
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8g2_line.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -342,7 +342,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_ll_hvline.c.obj: C_COMPILER
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8g2_ll_hvline.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -351,7 +351,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_message.c.obj: C_COMPILER__
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8g2_message.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -360,7 +360,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_polygon.c.obj: C_COMPILER__
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8g2_polygon.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -369,7 +369,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_selection_list.c.obj: C_COM
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8g2_selection_list.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -378,7 +378,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_setup.c.obj: C_COMPILER__St
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8g2_setup.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -387,7 +387,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8log.c.obj: C_COMPILER__StudyTe
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8log.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -396,7 +396,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8log_u8g2.c.obj: C_COMPILER__St
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8log_u8g2.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -405,7 +405,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8log_u8x8.c.obj: C_COMPILER__St
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8log_u8x8.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -414,7 +414,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_8x8.c.obj: C_COMPILER__Stud
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8x8_8x8.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -423,7 +423,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_byte.c.obj: C_COMPILER__Stu
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8x8_byte.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -432,7 +432,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_cad.c.obj: C_COMPILER__Stud
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8x8_cad.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -441,7 +441,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_capture.c.obj: C_COMPILER__
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8x8_capture.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -450,7 +450,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_d_ssd1306_128x64_noname.c.o
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8x8_d_ssd1306_128x64_noname.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -459,7 +459,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_debounce.c.obj: C_COMPILER_
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8x8_debounce.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -468,7 +468,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_display.c.obj: C_COMPILER__
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8x8_display.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -477,7 +477,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_fonts.c.obj: C_COMPILER__St
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8x8_fonts.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -486,7 +486,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_gpio.c.obj: C_COMPILER__Stu
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8x8_gpio.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -495,7 +495,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_input_value.c.obj: C_COMPIL
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8x8_input_value.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -504,7 +504,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_message.c.obj: C_COMPILER__
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8x8_message.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -513,7 +513,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_selection_list.c.obj: C_COM
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8x8_selection_list.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -522,7 +522,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_setup.c.obj: C_COMPILER__St
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8x8_setup.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -531,7 +531,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_string.c.obj: C_COMPILER__S
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8x8_string.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -540,7 +540,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_u16toa.c.obj: C_COMPILER__S
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8x8_u16toa.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -549,7 +549,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_u8toa.c.obj: C_COMPILER__St
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\u8x8_u8toa.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED
 
@@ -558,7 +558,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/RTT/SEGGER_RTT.c.obj: C_COMPILER__Stu
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\RTT\SEGGER_RTT.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\RTT
 
@@ -567,16 +567,106 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/RTT/SEGGER_RTT_printf.c.obj: C_COMPIL
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\RTT\SEGGER_RTT_printf.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\RTT
+
+build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/MiaoUI/custom.c.obj: C_COMPILER__StudyTest_unscanned_Debug E$:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI/custom.c || cmake_object_order_depends_target_StudyTest
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
+  DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\MiaoUI\custom.c.obj.d
+  FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\StudyTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\MiaoUI
+
+build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/MiaoUI/dispDriver.c.obj: C_COMPILER__StudyTest_unscanned_Debug E$:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI/dispDriver.c || cmake_object_order_depends_target_StudyTest
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
+  DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\MiaoUI\dispDriver.c.obj.d
+  FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\StudyTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\MiaoUI
+
+build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/MiaoUI/fonts.c.obj: C_COMPILER__StudyTest_unscanned_Debug E$:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI/fonts.c || cmake_object_order_depends_target_StudyTest
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
+  DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\MiaoUI\fonts.c.obj.d
+  FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\StudyTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\MiaoUI
+
+build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/MiaoUI/image.c.obj: C_COMPILER__StudyTest_unscanned_Debug E$:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI/image.c || cmake_object_order_depends_target_StudyTest
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
+  DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\MiaoUI\image.c.obj.d
+  FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\StudyTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\MiaoUI
+
+build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/MiaoUI/indevDriver.c.obj: C_COMPILER__StudyTest_unscanned_Debug E$:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI/indevDriver.c || cmake_object_order_depends_target_StudyTest
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
+  DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\MiaoUI\indevDriver.c.obj.d
+  FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\StudyTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\MiaoUI
+
+build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/MiaoUI/parameter.c.obj: C_COMPILER__StudyTest_unscanned_Debug E$:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI/parameter.c || cmake_object_order_depends_target_StudyTest
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
+  DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\MiaoUI\parameter.c.obj.d
+  FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\StudyTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\MiaoUI
+
+build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/MiaoUI/text.c.obj: C_COMPILER__StudyTest_unscanned_Debug E$:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI/text.c || cmake_object_order_depends_target_StudyTest
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
+  DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\MiaoUI\text.c.obj.d
+  FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\StudyTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\MiaoUI
+
+build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/MiaoUI/ui.c.obj: C_COMPILER__StudyTest_unscanned_Debug E$:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI/ui.c || cmake_object_order_depends_target_StudyTest
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
+  DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\MiaoUI\ui.c.obj.d
+  FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\StudyTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\MiaoUI
+
+build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/MiaoUI/ui_conf.c.obj: C_COMPILER__StudyTest_unscanned_Debug E$:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI/ui_conf.c || cmake_object_order_depends_target_StudyTest
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
+  DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\MiaoUI\ui_conf.c.obj.d
+  FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\StudyTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\MiaoUI
+
+build CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/MiaoUI/wave.c.obj: C_COMPILER__StudyTest_unscanned_Debug E$:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI/wave.c || cmake_object_order_depends_target_StudyTest
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
+  DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\MiaoUI\wave.c.obj.d
+  FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\StudyTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\OLED\MiaoUI
 
 build CMakeFiles/StudyTest.dir/Drivers/BSP/Src/Button.c.obj: C_COMPILER__StudyTest_unscanned_Debug E$:/Study/STM32/StudyTest/Drivers/BSP/Src/Button.c || cmake_object_order_depends_target_StudyTest
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\Src\Button.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\Src
 
@@ -585,7 +675,34 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/Src/Angle.c.obj: C_COMPILER__StudyTes
   DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
   DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\Src\Angle.c.obj.d
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\StudyTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\Src
+
+build CMakeFiles/StudyTest.dir/Drivers/BSP/Src/fashion_star_uart_servo.c.obj: C_COMPILER__StudyTest_unscanned_Debug E$:/Study/STM32/StudyTest/Drivers/BSP/Src/fashion_star_uart_servo.c || cmake_object_order_depends_target_StudyTest
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
+  DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\Src\fashion_star_uart_servo.c.obj.d
+  FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\StudyTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\Src
+
+build CMakeFiles/StudyTest.dir/Drivers/BSP/Src/ring_buffer.c.obj: C_COMPILER__StudyTest_unscanned_Debug E$:/Study/STM32/StudyTest/Drivers/BSP/Src/ring_buffer.c || cmake_object_order_depends_target_StudyTest
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
+  DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\Src\ring_buffer.c.obj.d
+  FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\StudyTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\Src
+
+build CMakeFiles/StudyTest.dir/Drivers/BSP/Src/user_uart.c.obj: C_COMPILER__StudyTest_unscanned_Debug E$:/Study/STM32/StudyTest/Drivers/BSP/Src/user_uart.c || cmake_object_order_depends_target_StudyTest
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32H750xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
+  DEP_FILE = CMakeFiles\StudyTest.dir\Drivers\BSP\Src\user_uart.c.obj.d
+  FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED -IE:/Study/STM32/StudyTest/Drivers/BSP/OLED/MiaoUI -IE:/Study/STM32/StudyTest/Drivers/BSP/Inc -IE:/Study/STM32/StudyTest/Drivers/BSP/RTT -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Core/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -IE:/Study/STM32/StudyTest/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\StudyTest.dir
   OBJECT_FILE_DIR = CMakeFiles\StudyTest.dir\Drivers\BSP\Src
 
@@ -597,7 +714,7 @@ build CMakeFiles/StudyTest.dir/Drivers/BSP/Src/Angle.c.obj: C_COMPILER__StudyTes
 #############################################
 # Link the executable StudyTest.elf
 
-build StudyTest.elf: C_EXECUTABLE_LINKER__StudyTest_Debug cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32h7xx.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj CMakeFiles/StudyTest.dir/Core/Src/main.c.obj CMakeFiles/StudyTest.dir/Core/Src/gpio.c.obj CMakeFiles/StudyTest.dir/Core/Src/adc.c.obj CMakeFiles/StudyTest.dir/Core/Src/dma.c.obj CMakeFiles/StudyTest.dir/Core/Src/i2c.c.obj CMakeFiles/StudyTest.dir/Core/Src/spi.c.obj CMakeFiles/StudyTest.dir/Core/Src/tim.c.obj CMakeFiles/StudyTest.dir/Core/Src/usart.c.obj CMakeFiles/StudyTest.dir/Core/Src/stm32h7xx_it.c.obj CMakeFiles/StudyTest.dir/Core/Src/stm32h7xx_hal_msp.c.obj CMakeFiles/StudyTest.dir/Core/Src/sysmem.c.obj CMakeFiles/StudyTest.dir/Core/Src/syscalls.c.obj CMakeFiles/StudyTest.dir/startup_stm32h750xx.s.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/OLED.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/mui.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/mui_u8g2.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_arc.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_bitmap.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_box.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_buffer.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_button.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_circle.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_cleardisplay.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_d_memory.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_d_setup.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_font.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_fonts.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_hvline.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_input_value.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_intersection.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_kerning.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_line.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_ll_hvline.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_message.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_polygon.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_selection_list.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_setup.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8log.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8log_u8g2.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8log_u8x8.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_8x8.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_byte.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_cad.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_capture.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_d_ssd1306_128x64_noname.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_debounce.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_display.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_fonts.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_gpio.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_input_value.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_message.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_selection_list.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_setup.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_string.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_u16toa.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_u8toa.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/RTT/SEGGER_RTT.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/RTT/SEGGER_RTT_printf.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/Src/Button.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/Src/Angle.c.obj || cmake/stm32cubemx/STM32_Drivers
+build StudyTest.elf: C_EXECUTABLE_LINKER__StudyTest_Debug cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32h7xx.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj CMakeFiles/StudyTest.dir/Core/Src/main.c.obj CMakeFiles/StudyTest.dir/Core/Src/gpio.c.obj CMakeFiles/StudyTest.dir/Core/Src/adc.c.obj CMakeFiles/StudyTest.dir/Core/Src/dma.c.obj CMakeFiles/StudyTest.dir/Core/Src/i2c.c.obj CMakeFiles/StudyTest.dir/Core/Src/spi.c.obj CMakeFiles/StudyTest.dir/Core/Src/tim.c.obj CMakeFiles/StudyTest.dir/Core/Src/usart.c.obj CMakeFiles/StudyTest.dir/Core/Src/stm32h7xx_it.c.obj CMakeFiles/StudyTest.dir/Core/Src/stm32h7xx_hal_msp.c.obj CMakeFiles/StudyTest.dir/Core/Src/sysmem.c.obj CMakeFiles/StudyTest.dir/Core/Src/syscalls.c.obj CMakeFiles/StudyTest.dir/startup_stm32h750xx.s.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/OLED.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/mui.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/mui_u8g2.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_arc.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_bitmap.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_box.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_buffer.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_button.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_circle.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_cleardisplay.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_d_memory.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_d_setup.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_font.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_fonts.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_hvline.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_input_value.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_intersection.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_kerning.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_line.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_ll_hvline.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_message.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_polygon.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_selection_list.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8g2_setup.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8log.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8log_u8g2.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8log_u8x8.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_8x8.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_byte.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_cad.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_capture.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_d_ssd1306_128x64_noname.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_debounce.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_display.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_fonts.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_gpio.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_input_value.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_message.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_selection_list.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_setup.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_string.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_u16toa.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/u8x8_u8toa.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/RTT/SEGGER_RTT.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/RTT/SEGGER_RTT_printf.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/MiaoUI/custom.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/MiaoUI/dispDriver.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/MiaoUI/fonts.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/MiaoUI/image.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/MiaoUI/indevDriver.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/MiaoUI/parameter.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/MiaoUI/text.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/MiaoUI/ui.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/MiaoUI/ui_conf.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/OLED/MiaoUI/wave.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/Src/Button.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/Src/Angle.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/Src/fashion_star_uart_servo.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/Src/ring_buffer.c.obj CMakeFiles/StudyTest.dir/Drivers/BSP/Src/user_uart.c.obj || cmake/stm32cubemx/STM32_Drivers
   CONFIG = Debug
   FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3
   LINK_FLAGS = -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -T "E:/Study/STM32/StudyTest/STM32H750XX_FLASH.ld" --specs=nano.specs -Wl,-Map=StudyTest.map -Wl,--gc-sections -Wl,--print-memory-usage
@@ -607,6 +724,7 @@ build StudyTest.elf: C_EXECUTABLE_LINKER__StudyTest_Debug cmake/stm32cubemx/CMak
   PRE_LINK = cd .
   TARGET_FILE = StudyTest.elf
   TARGET_PDB = StudyTest.elf.dbg
+  RSP_FILE = CMakeFiles\StudyTest.rsp
 
 
 #############################################

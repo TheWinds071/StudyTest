@@ -31,16 +31,25 @@
 #include "Button.h"
 #include "SEGGER_RTT.h"
 #include "Angle.h"
+#include "fashion_star_uart_servo.h"
+#include "oled.h"
+#include "u8g2.h"
+#include "user_uart.h"
+#include "dispDriver.h"
+#include "ui.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
+extern u8g2_t u8g2;
 Angle_HandleTypeDef hANGLE;
 Button_HandleTypeDef hKEY;
+ui_t MainUI;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+extern float Angle;
 
 /* USER CODE END PD */
 
@@ -52,14 +61,17 @@ Button_HandleTypeDef hKEY;
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+float Angle = 0.0f;  // 在这里定义全局变量
+float Angle_Offset = 81.0f;
+uint16_t bott = 12500;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MPU_Config(void);
 /* USER CODE BEGIN PFP */
-
+void FSUSExample_PingServo(void);
+void FSUSExample_ReadData(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -114,10 +126,20 @@ int main(void)
   MX_SPI4_Init();
   MX_UART4_Init();
   MX_UART8_Init();
+  MX_TIM7_Init();
   /* USER CODE BEGIN 2 */
-  SEGGER_RTT_Init();
+  SEGGER_RTT_Init();//RTT日志
 
   Angle_Init(&hANGLE, &hadc1); //角位移传感器
+
+  u8g2Init(&u8g2);
+  MiaoUi_Setup(&MainUI);
+  User_Uart_Init(&huart8);
+
+  HAL_TIM_Base_Start_IT(&htim7);
+
+  //FSUS_WriteData(&FSUS_Usart,0,FSUS_PARAM_OVER_VOLT_HIGH,(uint8_t *)&bott,2);
+  //FSUS_ResetUserData(&FSUS_Usart,0);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -127,14 +149,18 @@ int main(void)
     // 处理角度传感器逻辑
     Angle_Process(&hANGLE);
 
-    // 获取当前角度
-    float angle = Angle_GetFilteredAngle(&hANGLE);
+    // 获取当前角度并进行零点校准
+    float raw_angle = Angle_GetFilteredAngle(&hANGLE);
+    Angle = raw_angle - Angle_Offset;
 
-    HAL_Delay(10); // 10ms处理周期
-
-    SEGGER_RTT_printf(0,"%f\n",angle);
+    SEGGER_RTT_printf(0,"%f\n",Angle);
+    ui_loop(&MainUI);
+    // u8g2_DrawStr(&u8g2 ,0,10,"Hello World");
+    // u8g2_SendBuffer(&u8g2);
 
     //HAL_Delay(100);
+    //FSUSExample_PingServo();
+  	//FSUSExample_ReadData();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -201,7 +227,156 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+/**
+  * @brief TIM7 中断回调函数
+  * @param htim: TIM句柄指针
+  * @retval None
+  */
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+    // 判断是否为TIM7中断
+    if (htim->Instance == TIM7)
+    {
+        // 在此处添加10ms中断处理代码
+      // 获取当前摆杆角度 (-180~180度)
+      float pendulum_angle = Angle;
+      // 计算舵机补偿角度 (取反以保持水平)A
+      float servo_angle = pendulum_angle;
 
+      // 限制舵机角度范围 (根据舵机规格调整)
+      if (servo_angle > 180.0f) servo_angle = 180.0f;
+      if (servo_angle < -180.0f) servo_angle = -180.0f;
+
+      // 控制舵机转动到指定角度
+      FSUS_SetServoAngleByInterval(&FSUS_Usart,0,servo_angle,100,20,20,0);
+
+      HAL_GPIO_TogglePin(LED_B_GPIO_Port, LED_B_Pin);
+    }
+}
+
+
+/* 舵机通讯检测 */
+void FSUSExample_PingServo(void)
+{
+  FSUS_STATUS status_code; // 状态码
+  uint8_t servo_id = 0;	 // 舵机ID = 0
+
+  Usart_DataTypeDef *servo_usart = &FSUS_Usart; // 串口总线舵机对应的USART
+
+  SEGGER_RTT_printf(0,"===Test Uart Servo Ping===r\n");
+  while (1)
+  {
+    // 舵机通信检测
+    status_code = FSUS_Ping(servo_usart, servo_id);
+    if (status_code == FSUS_STATUS_SUCCESS)
+    {
+      // 舵机在线， LED1闪烁(绿灯)
+      SEGGER_RTT_printf(0,"Servo Online \r\n");
+      HAL_GPIO_TogglePin(LED_G_GPIO_Port, LED_G_Pin);
+    }
+    else
+    {
+      // 舵机离线， LED0闪烁(红灯)
+      SEGGER_RTT_printf(0,"Servo Offline,Error Code=%d \r\n", status_code);
+      HAL_GPIO_TogglePin(LED_R_GPIO_Port, LED_R_Pin);
+    }
+    // 延时等待1s
+    HAL_Delay(1000);
+  }
+}
+
+/*读取舵机状态*/
+void FSUSExample_ReadData(void)
+{
+	uint8_t servo_id = 0;	// 连接在转接板上的总线伺服舵机ID号
+	FSUS_STATUS statusCode; // 状态码
+
+	// 数据表里面的数据字节长度一般为1个字节/2个字节/4个字节
+	// 查阅通信协议可知,舵机角度上限的数据类型是有符号短整型(UShort, 对应STM32里面的int16_t),长度为2个字节
+	// 所以这里设置value的数据类型为int16_t
+	int16_t value;
+	uint8_t dataSize;
+	// 传参数的时候, 要将value的指针强行转换为uint8_t
+	Usart_DataTypeDef *servo_usart = &FSUS_Usart; // 串口总线舵机对应的USART
+
+	// 读取电压
+	statusCode = FSUS_ReadData(servo_usart, servo_id, FSUS_PARAM_VOLTAGE, (uint8_t *)&value, &dataSize);
+
+	SEGGER_RTT_printf(0,"read ID: %d\r\n", servo_id);
+
+	if (statusCode == FSUS_STATUS_SUCCESS)
+	{
+		SEGGER_RTT_printf(0,"read sucess, voltage: %d mV\r\n", value);
+	}
+	else
+	{
+		SEGGER_RTT_printf(0,"fail\r\n");
+	}
+
+	// 读取电流
+	statusCode = FSUS_ReadData(servo_usart, servo_id, FSUS_PARAM_CURRENT, (uint8_t *)&value, &dataSize);
+	if (statusCode == FSUS_STATUS_SUCCESS)
+	{
+		SEGGER_RTT_printf(0,"read sucess, current: %d mA\r\n", value);
+	}
+	else
+	{
+		SEGGER_RTT_printf(0,"fail\r\n");
+	}
+
+	// 读取功率
+	statusCode = FSUS_ReadData(servo_usart, servo_id, FSUS_PARAM_POWER, (uint8_t *)&value, &dataSize);
+	if (statusCode == FSUS_STATUS_SUCCESS)
+	{
+		SEGGER_RTT_printf(0,"read sucess, power: %d mW\r\n", value);
+	}
+	else
+	{
+		SEGGER_RTT_printf(0,"fail\r\n");
+	}
+	// 读取温度
+	statusCode = FSUS_ReadData(servo_usart, servo_id, FSUS_PARAM_TEMPRATURE, (uint8_t *)&value, &dataSize);
+	if (statusCode == FSUS_STATUS_SUCCESS)
+	{
+		double temperature, temp;
+		temp = (double)value;
+		temperature = 1 / (log(temp / (4096.0f - temp)) / 3435.0f + 1 / (273.15 + 25)) - 273.15;
+		SEGGER_RTT_printf(0,"read sucess, temperature: %f\r\n", temperature);
+	}
+	else
+	{
+		SEGGER_RTT_printf(0,"fail\r\n");
+	}
+	// 读取工作状态
+	statusCode = FSUS_ReadData(servo_usart, servo_id, FSUS_PARAM_SERVO_STATUS, (uint8_t *)&value, &dataSize);
+	if (statusCode == FSUS_STATUS_SUCCESS)
+	{
+		// 舵机工作状态标志位
+		// BIT[0] - 执行指令置1，执行完成后清零。
+		// BIT[1] - 执行指令错误置1，在下次正确执行后清零。
+		// BIT[2] - 堵转错误置1，解除堵转后清零。
+		// BIT[3] - 电压过高置1，电压恢复正常后清零。
+		// BIT[4] - 电压过低置1，电压恢复正常后清零。
+		// BIT[5] - 电流错误置1，电流恢复正常后清零。
+		// BIT[6] - 功率错误置1，功率恢复正常后清零。
+		// BIT[7] - 温度错误置1，温度恢复正常后清零。
+
+		if ((value >> 3) & 0x01)
+			SEGGER_RTT_printf(0,"read sucess, voltage too high\r\n");
+		if ((value >> 4) & 0x01)
+			SEGGER_RTT_printf(0,"read sucess, voltage too low\r\n");
+	}
+	else
+	{
+		SEGGER_RTT_printf(0,"fail\r\n");
+	}
+	SEGGER_RTT_printf(0,"================================= \r\n");
+
+	// 死循环
+	while (1)
+	{
+	}
+}
 /* USER CODE END 4 */
 
  /* MPU Configuration */

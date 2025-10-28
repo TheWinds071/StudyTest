@@ -5,7 +5,7 @@
       <env />
     </debugger>
     <gdbserver exe="$PROJECT_DIR$/../../../SEGGER/JLink/JLink_V870/JLinkGDBServerCL.exe" />
-    <console port="2334" />
+    <console enabled="false" port="2334" />
     <target device="STM32H750VB" reset-before="false" />
     <connection extended-remote="false" port="4444" warmup-ms="500" />
     <swo />

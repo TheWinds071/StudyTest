@@ -3,6 +3,8 @@
 //
 
 #include "Angle.h"
+
+#include "fashion_star_uart_servo.h"
 #include "main.h"
 
 __attribute__((section(".RAM"))) uint16_t adcRawData[10] = {0};
@@ -77,6 +79,7 @@ void Angle_Process(Angle_HandleTypeDef* hangle)
         case BUTTON_EVENT_CLICKED:
             // 单击设置零点
             Angle_SetZeroPoint(hangle);
+            //FSUS_SetOriginPoint(&FSUS_Usart, 0);
             break;
         case BUTTON_EVENT_DOUBLE_CLICKED:
             // 双击重置校准
