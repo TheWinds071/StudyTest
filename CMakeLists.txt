@@ -57,6 +57,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
         Drivers/BSP/Src/fashion_star_uart_servo.c
         Drivers/BSP/Src/ring_buffer.c
         Drivers/BSP/Src/user_uart.c
+        Drivers/BSP/Src/question.c
 )
 
 # Add include paths

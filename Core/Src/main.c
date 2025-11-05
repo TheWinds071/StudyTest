@@ -37,6 +37,7 @@
 #include "user_uart.h"
 #include "dispDriver.h"
 #include "ui.h"
+#include "question.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -62,8 +63,10 @@ extern float Angle;
 
 /* USER CODE BEGIN PV */
 float Angle = 0.0f;  // 在这里定义全局变量
-float Angle_Offset = 81.0f;
-uint16_t bott = 12500;
+float Angle_Offset = 122.7f;
+
+float bott = 2.0f;
+uint8_t questionTotalFlag;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -137,9 +140,12 @@ int main(void)
   User_Uart_Init(&huart8);
 
   HAL_TIM_Base_Start_IT(&htim7);
-
+	// int16_t mid_offset_value = (int16_t)(bott * 10);  // 转换为0.1度单位
+ //  FSUS_WriteData(&FSUS_Usart,0,FSUS_PARAM_ANGLE_MID_OFFSET,(uint8_t *)&mid_offset_value,2);
   //FSUS_WriteData(&FSUS_Usart,0,FSUS_PARAM_OVER_VOLT_HIGH,(uint8_t *)&bott,2);
   //FSUS_ResetUserData(&FSUS_Usart,0);
+  //FSUS_SetOriginPoint(&FSUS_Usart,0);
+  //FSUS_StopOnControlMode(&FSUS_Usart,0,0,500);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -148,12 +154,12 @@ int main(void)
   {
     // 处理角度传感器逻辑
     Angle_Process(&hANGLE);
-
+  	//FSUS_SetOriginPoint(&FSUS_Usart,0);
     // 获取当前角度并进行零点校准
     float raw_angle = Angle_GetFilteredAngle(&hANGLE);
-    Angle = raw_angle - Angle_Offset;
+    Angle = raw_angle;
 
-    SEGGER_RTT_printf(0,"%f\n",Angle);
+
     ui_loop(&MainUI);
     // u8g2_DrawStr(&u8g2 ,0,10,"Hello World");
     // u8g2_SendBuffer(&u8g2);
@@ -237,18 +243,45 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     // 判断是否为TIM7中断
     if (htim->Instance == TIM7)
     {
-        // 在此处添加10ms中断处理代码
-      // 获取当前摆杆角度 (-180~180度)
-      float pendulum_angle = Angle;
-      // 计算舵机补偿角度 (取反以保持水平)A
-      float servo_angle = pendulum_angle;
+    	questionTotalFlag = getQuestionFlag();
 
-      // 限制舵机角度范围 (根据舵机规格调整)
-      if (servo_angle > 180.0f) servo_angle = 180.0f;
-      if (servo_angle < -180.0f) servo_angle = -180.0f;
+    	switch (questionTotalFlag) {
+    		case 1:
+    			FSUS_SetServoAngleMTurn(&FSUS_Usart,0,360,120,0);
 
-      // 控制舵机转动到指定角度
-      FSUS_SetServoAngleByInterval(&FSUS_Usart,0,servo_angle,100,20,20,0);
+    			//FSUS_SetOriginPoint(&FSUS_Usart,0);
+    			break;
+
+    		case 2:
+    			//FSUS_SetServoAngleMTurn(&FSUS_Usart,0,,500,0);
+    			FSUS_SetServoAngleByInterval(&FSUS_Usart,0,-20,100,20,20,0);
+    			float servoAngle=0;
+				//FSUS_QueryServoAngle(&FSUS_Usart,0,&servoAngle);
+    			//SEGGER_RTT_printf(0,"Servo Angle: %f\n",servoAngle);
+    			break;
+
+    		case 3:
+    			// 获取当前摆杆角度 (-180~180度)
+    			float pendulum_angle = Angle;
+    			// 计算舵机补偿角度 (取反以保持水平)A
+    			float servo_angle = pendulum_angle;
+
+    			// 限制舵机角度范围 (根据舵机规格调整)
+    			// if (servo_angle > 180.0f) servo_angle = 180.0f;
+    			// if (servo_angle < -180.0f) servo_angle = -180.0f;
+
+    			servo_angle = servo_angle * 0.6f;
+
+    			servo_angle = servo_angle-73.5f;
+    			SEGGER_RTT_printf(0,"%f\n",servo_angle);
+    			// 控制舵机转动到指定角度
+    			FSUS_SetServoAngleByInterval(&FSUS_Usart,0,servo_angle,100,20,20,0);
+    			break;
+
+    		default:
+    			//SEGGER_RTT_printf(0,"Question Total Flag Error\n");
+    			break;
+    	}
 
       HAL_GPIO_TogglePin(LED_B_GPIO_Port, LED_B_Pin);
     }

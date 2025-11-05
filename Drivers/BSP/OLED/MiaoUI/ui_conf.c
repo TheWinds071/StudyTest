@@ -98,7 +98,7 @@ void Create_Parameter(ui_t *ui)
 
 // 添加获取Question1 Flag的函数
 uint8_t getUIQuestion1Flag(void) {
-    extern ui_item_t Question1_Item;
+    // extern ui_item_t Question1_Item;
     if (Question1_Item.element && Question1_Item.element->data && Question1_Item.element->data->ptr) {
         return *((uint8_t*)Question1_Item.element->data->ptr);
     }
@@ -107,7 +107,7 @@ uint8_t getUIQuestion1Flag(void) {
 
 // 添加获取Question2 Flag的函数
 uint8_t getUIQuestion2Flag(void) {
-    extern ui_item_t Question2_Item;
+    // extern ui_item_t Question2_Item;
     if (Question2_Item.element && Question2_Item.element->data && Question2_Item.element->data->ptr) {
         return *((uint8_t*)Question2_Item.element->data->ptr);
     }
@@ -116,7 +116,7 @@ uint8_t getUIQuestion2Flag(void) {
 
 // 添加获取Question3 Flag的函数
 uint8_t getUIQuestion3Flag(void) {
-    extern ui_item_t Question3_Item;
+    // extern ui_item_t Question3_Item;
     if (Question3_Item.element && Question3_Item.element->data && Question3_Item.element->data->ptr) {
         return *((uint8_t*)Question3_Item.element->data->ptr);
     }
