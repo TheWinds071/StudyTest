@@ -32,7 +32,7 @@
 #include "SEGGER_RTT.h"
 #include "Angle.h"
 #include "fashion_star_uart_servo.h"
-#include "oled.h"
+#include "OLED.h"
 #include "u8g2.h"
 #include "user_uart.h"
 #include "dispDriver.h"
@@ -63,7 +63,6 @@ extern float Angle;
 
 /* USER CODE BEGIN PV */
 float Angle = 0.0f;  // 在这里定义全局变量
-float Angle_Offset = 122.7f;
 
 float bott = 2.0f;
 uint8_t questionTotalFlag;
@@ -140,6 +139,8 @@ int main(void)
   User_Uart_Init(&huart8);
 
   HAL_TIM_Base_Start_IT(&htim7);
+  //设置零点
+  Angle_SetZeroPoint(&hANGLE);
 	// int16_t mid_offset_value = (int16_t)(bott * 10);  // 转换为0.1度单位
  //  FSUS_WriteData(&FSUS_Usart,0,FSUS_PARAM_ANGLE_MID_OFFSET,(uint8_t *)&mid_offset_value,2);
   //FSUS_WriteData(&FSUS_Usart,0,FSUS_PARAM_OVER_VOLT_HIGH,(uint8_t *)&bott,2);
@@ -270,9 +271,6 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     			// if (servo_angle > 180.0f) servo_angle = 180.0f;
     			// if (servo_angle < -180.0f) servo_angle = -180.0f;
 
-    			servo_angle = servo_angle * 0.6f;
-
-    			servo_angle = servo_angle-73.5f;
     			SEGGER_RTT_printf(0,"%f\n",servo_angle);
     			// 控制舵机转动到指定角度
     			FSUS_SetServoAngleByInterval(&FSUS_Usart,0,servo_angle,100,20,20,0);

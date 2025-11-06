@@ -1,5 +1,19 @@
-"E:\CLion 2025.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug --preset Debug -S E:\Study\STM32\StudyTest -B E:\Study\STM32\StudyTest\build\Debug
+/home/TheWinds/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug --preset Debug -S /home/TheWinds/Study/STM32/StudyTest -B /home/TheWinds/Study/STM32/StudyTest/build/Debug
+-- The C compiler identification is GNU 13.3.1
+-- The CXX compiler identification is GNU 13.3.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 Build type: Debug
--- Configuring done (0.1s)
+-- The ASM compiler identification is GNU
+-- Found assembler: /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc
+-- Configuring done (0.3s)
 -- Generating done (0.1s)
--- Build files have been written to: E:/Study/STM32/StudyTest/build/Debug
+-- Build files have been written to: /home/TheWinds/Study/STM32/StudyTest/build/Debug

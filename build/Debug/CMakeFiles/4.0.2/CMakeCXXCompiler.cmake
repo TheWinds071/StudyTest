@@ -1,4 +1,4 @@
-set(CMAKE_CXX_COMPILER "E:/STM32Cube/STM32CubeCLT_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe")
+set(CMAKE_CXX_COMPILER "/opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_COMPILER_VERSION "13.3.1")
@@ -25,14 +25,14 @@ set(CMAKE_CXX_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "E:/STM32Cube/STM32CubeCLT_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-ar.exe")
-set(CMAKE_CXX_COMPILER_AR "E:/STM32Cube/STM32CubeCLT_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc-ar.exe")
-set(CMAKE_RANLIB "E:/STM32Cube/STM32CubeCLT_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-ranlib.exe")
-set(CMAKE_CXX_COMPILER_RANLIB "E:/STM32Cube/STM32CubeCLT_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc-ranlib.exe")
-set(CMAKE_LINKER "E:/STM32Cube/STM32CubeCLT_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe")
+set(CMAKE_AR "/opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-ar")
+set(CMAKE_CXX_COMPILER_AR "/opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc-ar")
+set(CMAKE_RANLIB "/opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-ranlib")
+set(CMAKE_CXX_COMPILER_RANLIB "/opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc-ranlib")
+set(CMAKE_LINKER "/opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++")
 set(CMAKE_LINKER_LINK "")
 set(CMAKE_LINKER_LLD "")
-set(CMAKE_CXX_COMPILER_LINKER "[1/2] E:/STM32Cube/STM32CubeCLT_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe")
+set(CMAKE_CXX_COMPILER_LINKER "[1/2] /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++")
 set(CMAKE_CXX_COMPILER_LINKER_ID "")
 set(CMAKE_CXX_COMPILER_LINKER_VERSION )
 set(CMAKE_CXX_COMPILER_LINKER_FRONTEND_VARIANT )
@@ -90,7 +90,7 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "E:/STM32Cube/STM32CubeCLT_1.19.0/GNU-tools-for-STM32/arm-none-eabi/include/c++/13.3.1;E:/STM32Cube/STM32CubeCLT_1.19.0/GNU-tools-for-STM32/arm-none-eabi/include/c++/13.3.1/arm-none-eabi/thumb/v7e-m+dp/hard;E:/STM32Cube/STM32CubeCLT_1.19.0/GNU-tools-for-STM32/arm-none-eabi/include/c++/13.3.1/backward;E:/STM32Cube/STM32CubeCLT_1.19.0/GNU-tools-for-STM32/lib/gcc/arm-none-eabi/13.3.1/include;E:/STM32Cube/STM32CubeCLT_1.19.0/GNU-tools-for-STM32/lib/gcc/arm-none-eabi/13.3.1/include-fixed;E:/STM32Cube/STM32CubeCLT_1.19.0/GNU-tools-for-STM32/arm-none-eabi/include")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/arm-none-eabi/include/c++/13.3.1;/opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/arm-none-eabi/include/c++/13.3.1/arm-none-eabi/thumb/v7e-m+dp/hard;/opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/arm-none-eabi/include/c++/13.3.1/backward;/opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/lib/gcc/arm-none-eabi/13.3.1/include;/opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/lib/gcc/arm-none-eabi/13.3.1/include-fixed;/opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/arm-none-eabi/include")
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "")
 set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 #include "u8g2.h"
-#include "oled.h"
+#include "OLED.h"
 
 #include "i2c.h"
 #include "main.h"
-#include "oled.h"
+#include "OLED.h"
 
 
 
