@@ -14,6 +14,12 @@
 Build type: Debug
 -- The ASM compiler identification is GNU
 -- Found assembler: /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc
--- Configuring done (0.3s)
--- Generating done (0.1s)
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMSISCORE
+
+
 -- Build files have been written to: /home/TheWinds/Study/STM32/StudyTest/build/Debug

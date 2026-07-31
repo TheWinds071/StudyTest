@@ -32,14 +32,14 @@ message("Build type: " ${CMAKE_BUILD_TYPE})
 enable_language(C ASM)
 
 # Create an executable object type
-add_executable(${CMAKE_PROJECT_NAME})
+add_executable(${CMAKE_PROJECT_NAME}
+        Drivers/BSP/Src/encoder.c
+        Drivers/BSP/Src/gray.c)
 
 # Add STM32CubeMX generated sources
 add_subdirectory(cmake/stm32cubemx)
-add_subdirectory(Drivers/CMSIS-DSP)
 
 file(GLOB OLED "Drivers/BSP/OLED/*.c")
-file(GLOB MiaoUI "Drivers/BSP/OLED/MiaoUI/*.c")
 file(GLOB RTT "Drivers/BSP/RTT/*.c")
 
 # Link directories setup
@@ -53,8 +53,8 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
         ${OLED}
         ${RTT}
         ${MiaoUI}
-        Drivers/BSP/Src/Button.c
-        Drivers/BSP/Src/Angle.c
+        Drivers/BSP/OLED/task_ui.c
+        Drivers/BSP/Src/drv8870.c
         Drivers/BSP/Src/fashion_star_uart_servo.c
         Drivers/BSP/Src/ring_buffer.c
         Drivers/BSP/Src/user_uart.c
@@ -65,7 +65,6 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
         Drivers/BSP/OLED
-        Drivers/BSP/OLED/MiaoUI
         Drivers/BSP/Inc
         Drivers/BSP/RTT
 )
@@ -81,6 +80,5 @@ list(REMOVE_ITEM CMAKE_C_IMPLICIT_LINK_LIBRARIES ob)
 # Add linked libraries
 target_link_libraries(${CMAKE_PROJECT_NAME}
     stm32cubemx
-    CMSISDSP
     # Add user defined libraries
 )

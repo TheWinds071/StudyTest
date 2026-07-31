@@ -57,6 +57,12 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define Button_DOWN_Pin GPIO_PIN_4
+#define Button_DOWN_GPIO_Port GPIOE
+#define Button_IN_Pin GPIO_PIN_5
+#define Button_IN_GPIO_Port GPIOE
+#define Button_UP_Pin GPIO_PIN_6
+#define Button_UP_GPIO_Port GPIOE
 #define KEY_Pin GPIO_PIN_13
 #define KEY_GPIO_Port GPIOC
 #define LED_R_Pin GPIO_PIN_0
@@ -65,14 +71,26 @@ void Error_Handler(void);
 #define LED_G_GPIO_Port GPIOC
 #define LED_B_Pin GPIO_PIN_2
 #define LED_B_GPIO_Port GPIOC
-#define SPI4_CS_Pin GPIO_PIN_15
-#define SPI4_CS_GPIO_Port GPIOE
-#define KEY_Up_Pin GPIO_PIN_8
-#define KEY_Up_GPIO_Port GPIOD
-#define KEY_Down_Pin GPIO_PIN_9
-#define KEY_Down_GPIO_Port GPIOD
-#define KEY_Enter_Pin GPIO_PIN_10
-#define KEY_Enter_GPIO_Port GPIOD
+#define ENCODERL2_Pin GPIO_PIN_0
+#define ENCODERL2_GPIO_Port GPIOA
+#define ENCODERL1_Pin GPIO_PIN_1
+#define ENCODERL1_GPIO_Port GPIOA
+#define SPI1_CS_Pin GPIO_PIN_4
+#define SPI1_CS_GPIO_Port GPIOA
+#define Servo_TX_Pin GPIO_PIN_8
+#define Servo_TX_GPIO_Port GPIOE
+#define MOTORL1_Pin GPIO_PIN_9
+#define MOTORL1_GPIO_Port GPIOE
+#define MOTORL2_Pin GPIO_PIN_11
+#define MOTORL2_GPIO_Port GPIOE
+#define MOTORR1_Pin GPIO_PIN_13
+#define MOTORR1_GPIO_Port GPIOE
+#define MOTORR2_Pin GPIO_PIN_14
+#define MOTORR2_GPIO_Port GPIOE
+#define ENCODERR2_Pin GPIO_PIN_6
+#define ENCODERR2_GPIO_Port GPIOC
+#define ENCODERR1_Pin GPIO_PIN_7
+#define ENCODERR1_GPIO_Port GPIOC
 
 /* USER CODE BEGIN Private defines */
 

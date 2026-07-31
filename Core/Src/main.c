@@ -18,8 +18,6 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "adc.h"
-#include "dma.h"
 #include "i2c.h"
 #include "spi.h"
 #include "tim.h"
@@ -28,24 +26,23 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "Button.h"
 #include "SEGGER_RTT.h"
-#include "Angle.h"
 #include "fashion_star_uart_servo.h"
 #include "OLED.h"
 #include "u8g2.h"
 #include "user_uart.h"
-#include "dispDriver.h"
-#include "ui.h"
 #include "question.h"
+#include "task_ui.h"
+#include "drv8870.h"
+#include "encoder.h"
+#include "gray.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-extern u8g2_t u8g2;
-Angle_HandleTypeDef hANGLE;
-Button_HandleTypeDef hKEY;
-ui_t MainUI;
+u8g2_t u8g2;
+UI_HandleTypeDef g_ui;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -62,10 +59,8 @@ extern float Angle;
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-float Angle = 0.0f;  // 在这里定义全局变量
-
-float bott = 2.0f;
-uint8_t questionTotalFlag;
+uint8_t g_gray_raw = 0;   // 灰度传感器原始状态掩码
+int32_t g_gray_pos = 0;   // 灰度传感器质心误差值
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -78,7 +73,45 @@ void FSUSExample_ReadData(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+UI_KeyEvent_e Scan_UI_Buttons(void) {
+    typedef struct {
+        GPIO_TypeDef* port;
+        uint16_t pin;
+        uint8_t last_pressed;   // 1 表示当前按键处于按下状态
+        uint32_t last_tick;     // 上次触发按键的时间戳
+        UI_KeyEvent_e key_evt;  // 绑定的按键事件
+    } Button_Item_t;
 
+    static Button_Item_t btn_list[] = {
+        {Button_UP_GPIO_Port,   Button_UP_Pin,   0, 0, KEY_UP},
+        {Button_DOWN_GPIO_Port, Button_DOWN_Pin, 0, 0, KEY_DOWN},
+        {Button_IN_GPIO_Port,   Button_IN_Pin,   0, 0, KEY_IN}
+    };
+
+    uint32_t now = HAL_GetTick();
+    UI_KeyEvent_e event = KEY_NONE;
+
+    for (int i = 0; i < 3; i++) {
+        // 按键按下时引脚读出低电平 GPIO_PIN_RESET
+        uint8_t is_down = (HAL_GPIO_ReadPin(btn_list[i].port, btn_list[i].pin) == GPIO_PIN_RESET) ? 1 : 0;
+
+        if (is_down) {
+            // 边缘按下触发检测（加 120ms 防抖限制）
+            if (!btn_list[i].last_pressed && (now - btn_list[i].last_tick > 120)) {
+                btn_list[i].last_pressed = 1;
+                btn_list[i].last_tick = now;
+                if (event == KEY_NONE) {
+                    event = btn_list[i].key_evt;
+                }
+            }
+        } else {
+            // 松开按键时立即复位状态
+            btn_list[i].last_pressed = 0;
+        }
+    }
+
+    return event;
+}
 /* USER CODE END 0 */
 
 /**
@@ -121,53 +154,53 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_DMA_Init();
   MX_TIM1_Init();
-  MX_ADC1_Init();
-  MX_I2C3_Init();
-  MX_SPI4_Init();
   MX_UART4_Init();
   MX_UART8_Init();
   MX_TIM7_Init();
+  MX_I2C4_Init();
+  MX_SPI1_Init();
+  MX_TIM2_Init();
+  MX_TIM3_Init();
+  MX_UART7_Init();
+  MX_USART2_UART_Init();
+  MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
-  SEGGER_RTT_Init();//RTT日志
-
-  Angle_Init(&hANGLE, &hadc1); //角位移传感器
+  SEGGER_RTT_Init(); 
 
   u8g2Init(&u8g2);
-  MiaoUi_Setup(&MainUI);
-  User_Uart_Init(&huart8);
+  UI_Init(&g_ui);
 
-  HAL_TIM_Base_Start_IT(&htim7);
-  //设置零点
-  Angle_SetZeroPoint(&hANGLE);
-	// int16_t mid_offset_value = (int16_t)(bott * 10);  // 转换为0.1度单位
- //  FSUS_WriteData(&FSUS_Usart,0,FSUS_PARAM_ANGLE_MID_OFFSET,(uint8_t *)&mid_offset_value,2);
-  //FSUS_WriteData(&FSUS_Usart,0,FSUS_PARAM_OVER_VOLT_HIGH,(uint8_t *)&bott,2);
-  //FSUS_ResetUserData(&FSUS_Usart,0);
-  //FSUS_SetOriginPoint(&FSUS_Usart,0);
-  //FSUS_StopOnControlMode(&FSUS_Usart,0,0,500);
+  // 初始化 DRV8870 (会自动配置好 PWM)
+  DRV8870_Init();
+
+  // 初始化编码器及测速中断
+  Encoder_Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    // 处理角度传感器逻辑
-    Angle_Process(&hANGLE);
-  	//FSUS_SetOriginPoint(&FSUS_Usart,0);
-    // 获取当前角度并进行零点校准
-    float raw_angle = Angle_GetFilteredAngle(&hANGLE);
-    Angle = raw_angle;
+    // 1. 非阻塞按键检测
+    UI_KeyEvent_e key = Scan_UI_Buttons();
 
+    // 2. 响应按键并更新状态
+    UI_ProcessKey(&g_ui, key);
 
-    ui_loop(&MainUI);
-    // u8g2_DrawStr(&u8g2 ,0,10,"Hello World");
-    // u8g2_SendBuffer(&u8g2);
+    // 3. U8G2 画面渲染
+    UI_Update(&u8g2, &g_ui);
 
-    //HAL_Delay(100);
-    //FSUSExample_PingServo();
-  	//FSUSExample_ReadData();
+    // 4. 读取灰度传感器数据
+    g_gray_raw = Gray_ReadRaw();
+    g_gray_pos = Gray_ReadPosition();
+
+    HAL_GPIO_TogglePin(LED_B_GPIO_Port, LED_B_Pin);
+
+  	// 设置左电机正转，速度步数 6000 (相当于50%)
+  	//DRV8870_SetSpeed(&g_motorL, 2500);
+  	// 设置右电机正转，速度步数 12000 (满速100%)
+  	//DRV8870_SetSpeed(&g_motorR, 1000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -204,7 +237,7 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.PLL.PLLM = 5;
   RCC_OscInitStruct.PLL.PLLN = 192;
   RCC_OscInitStruct.PLL.PLLP = 2;
-  RCC_OscInitStruct.PLL.PLLQ = 2;
+  RCC_OscInitStruct.PLL.PLLQ = 5;
   RCC_OscInitStruct.PLL.PLLR = 2;
   RCC_OscInitStruct.PLL.PLLRGE = RCC_PLL1VCIRANGE_2;
   RCC_OscInitStruct.PLL.PLLVCOSEL = RCC_PLL1VCOWIDE;
@@ -244,43 +277,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     // 判断是否为TIM7中断
     if (htim->Instance == TIM7)
     {
-    	questionTotalFlag = getQuestionFlag();
-
-    	switch (questionTotalFlag) {
-    		case 1:
-    			FSUS_SetServoAngleMTurn(&FSUS_Usart,0,360,120,0);
-
-    			//FSUS_SetOriginPoint(&FSUS_Usart,0);
-    			break;
-
-    		case 2:
-    			//FSUS_SetServoAngleMTurn(&FSUS_Usart,0,,500,0);
-    			FSUS_SetServoAngleByInterval(&FSUS_Usart,0,-20,100,20,20,0);
-    			float servoAngle=0;
-				//FSUS_QueryServoAngle(&FSUS_Usart,0,&servoAngle);
-    			//SEGGER_RTT_printf(0,"Servo Angle: %f\n",servoAngle);
-    			break;
-
-    		case 3:
-    			// 获取当前摆杆角度 (-180~180度)
-    			float pendulum_angle = Angle;
-    			// 计算舵机补偿角度 (取反以保持水平)A
-    			float servo_angle = pendulum_angle;
-
-    			// 限制舵机角度范围 (根据舵机规格调整)
-    			// if (servo_angle > 180.0f) servo_angle = 180.0f;
-    			// if (servo_angle < -180.0f) servo_angle = -180.0f;
-
-    			SEGGER_RTT_printf(0,"%f\n",servo_angle);
-    			// 控制舵机转动到指定角度
-    			FSUS_SetServoAngleByInterval(&FSUS_Usart,0,servo_angle,100,20,20,0);
-    			break;
-
-    		default:
-    			//SEGGER_RTT_printf(0,"Question Total Flag Error\n");
-    			break;
-    	}
-
+      Encoder_Update(); // 更新编码器速度 (10ms)
       HAL_GPIO_TogglePin(LED_B_GPIO_Port, LED_B_Pin);
     }
 }

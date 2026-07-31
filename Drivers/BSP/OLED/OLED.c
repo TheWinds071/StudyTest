@@ -21,7 +21,7 @@ uint8_t u8x8_byte_hw_i2c(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_p
     case U8X8_MSG_BYTE_INIT:
     {
         /* add your custom code to init i2c subsystem */
-        MX_I2C3_Init(); //I2C???
+        MX_I2C4_Init(); //I2C???
     }
     break;
 
@@ -46,7 +46,7 @@ uint8_t u8x8_byte_hw_i2c(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_p
 
     case U8X8_MSG_BYTE_END_TRANSFER:
     {
-        if (HAL_I2C_Master_Transmit(&hi2c3, (OLED_ADDRESS), buffer, buf_idx, 1000) != HAL_OK)
+        if (HAL_I2C_Master_Transmit(&hi2c4, (OLED_ADDRESS), buffer, buf_idx, 1000) != HAL_OK)
             return 0;
     }
     break;
@@ -93,9 +93,10 @@ uint8_t u8g2_gpio_and_delay_stm32(U8X8_UNUSED u8x8_t *u8x8, U8X8_UNUSED uint8_t 
 
 void u8g2Init(u8g2_t *u8g2)
 {
-	u8g2_Setup_ssd1306_i2c_128x64_noname_f(u8g2, U8G2_R0, u8x8_byte_hw_i2c, u8g2_gpio_and_delay_stm32); // ??? u8g2 ???
-	u8g2_InitDisplay(u8g2);                                                                       // ??????????????,??????,?????????
-	u8g2_SetPowerSave(u8g2, 0);                                                                   // ?????
+	u8g2_Setup_ssd1306_i2c_128x64_noname_f(u8g2, U8G2_R0, u8x8_byte_hw_i2c, u8g2_gpio_and_delay_stm32);
+	u8g2_InitDisplay(u8g2);
+	u8g2_SetPowerSave(u8g2, 0);
+	u8g2_SetFont(u8g2, u8g2_font_wqy15_t_chinese1);
 	u8g2_ClearBuffer(u8g2);
 }
 
