@@ -53,7 +53,8 @@ extern "C" {
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
-
+extern volatile float Angle;
+void Gyro_Update_Routine(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/

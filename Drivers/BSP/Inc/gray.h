@@ -19,8 +19,8 @@
 #define GRAY_R1_PIN  GPIO_PIN_11
 
 // M - 最右
-#define GRAY_R2_PORT GPIOA
-#define GRAY_R2_PIN  GPIO_PIN_12
+#define GRAY_R2_PORT GPIOC
+#define GRAY_R2_PIN  GPIO_PIN_8
 
 // 定义探头压到黑线时的触发电平（绝大多数模块压到黑线输出低电平）
 #define GRAY_ACTIVE_LEVEL GPIO_PIN_RESET

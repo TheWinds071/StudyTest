@@ -143,12 +143,22 @@ static void UI_DrawTaskStopwatch(u8g2_t *u8g2, UI_HandleTypeDef *hui) {
     u8g2_DrawHLine(u8g2, 0, 48, 128);
     u8g2_SetFont(u8g2, u8g2_font_6x10_tf);
     if (hui->is_timing) {
-        u8g2_DrawStr(u8g2, 4, 60, "> RUNNING...");
+        if (hui->select_index == 2) {
+            extern volatile float Angle;
+            int32_t heading = (int32_t)Angle;
+            if (heading > 180) heading -= 360;
+            snprintf(str_buf, sizeof(str_buf), "YAW:%ld deg", (long)heading);
+        } else {
+            extern uint8_t g_gray_raw;
+            extern int32_t g_gray_pos;
+            snprintf(str_buf, sizeof(str_buf), "POS:%ld R:%02X", g_gray_pos, g_gray_raw);
+        }
+        u8g2_DrawStr(u8g2, 4, 60, str_buf);
     } else {
         u8g2_DrawStr(u8g2, 4, 60, "# STOP");
     }
 
-    u8g2_DrawStr(u8g2, 80, 60, "[IN: ESC]");
+    u8g2_DrawStr(u8g2, 90, 60, "[ESC]");
 }
 
 // 刷新 UI 入口

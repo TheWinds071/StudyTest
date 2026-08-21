@@ -21,7 +21,9 @@
 #include "tim.h"
 
 /* USER CODE BEGIN 0 */
-
+#include "encoder.h"
+#include "SEGGER_RTT.h"
+#include "tasks.h"
 /* USER CODE END 0 */
 
 TIM_HandleTypeDef htim1;
@@ -45,9 +47,9 @@ void MX_TIM1_Init(void)
 
   /* USER CODE END TIM1_Init 1 */
   htim1.Instance = TIM1;
-  htim1.Init.Prescaler = 0;
+  htim1.Init.Prescaler = 6-1;
   htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim1.Init.Period = 12000-1;
+  htim1.Init.Period = 1000-1;
   htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim1.Init.RepetitionCounter = 0;
   htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
@@ -208,9 +210,9 @@ void MX_TIM7_Init(void)
 
   /* USER CODE END TIM7_Init 1 */
   htim7.Instance = TIM7;
-  htim7.Init.Prescaler = 240-1;
+  htim7.Init.Prescaler = 120-1;
   htim7.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim7.Init.Period = 10000-1;
+  htim7.Init.Period = 1000-1;
   htim7.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
   if (HAL_TIM_Base_Init(&htim7) != HAL_OK)
   {
@@ -337,7 +339,7 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef* timHandle)
     GPIO_InitStruct.Pin = MOTORL1_Pin|MOTORL2_Pin|MOTORR1_Pin|MOTORR2_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
-    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
     GPIO_InitStruct.Alternate = GPIO_AF1_TIM1;
     HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
 
@@ -425,6 +427,35 @@ void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* tim_baseHandle)
 }
 
 /* USER CODE BEGIN 1 */
+// 定时器中断回调函数
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+    if (htim->Instance == TIM7)
+    {
+        // 1ms 进一次中断，必须更新编码器才能有速度读数！
+        extern void Encoder_Update(void);
+        Encoder_Update();
+        
+        static uint8_t count = 0;
+        count++;
+        if (count >= 10)
+        {
+            static uint8_t rtt_divider = 0;
 
+            count = 0;
+            // 每 10ms 执行一次控制钩子，用于 PID 和电机更新
+            Task_ControlHook();
+
+            // 每 50ms 输出一次，避免在 1ms/10ms 中断里高频格式化影响控制。
+            rtt_divider++;
+            if (rtt_divider >= 5U)
+            {
+                rtt_divider = 0U;
+                SEGGER_RTT_printf(0, "task3_ball_error_last=%f\r\n",
+                                  Task3_GetBallErrorLast());
+            }
+        }
+    }
+}
 /* USER CODE END 1 */
 

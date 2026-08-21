@@ -36,7 +36,10 @@
 #include "drv8870.h"
 #include "encoder.h"
 #include "gray.h"
-
+#include "icm45686.h"
+#include "pid.h"
+#include "tasks.h"
+#include "rpi_vision.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -47,7 +50,7 @@ UI_HandleTypeDef g_ui;
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-extern float Angle;
+volatile float Angle = 0.0f; // 航向角（主循环更新，定时中断读取）
 
 /* USER CODE END PD */
 
@@ -61,6 +64,10 @@ extern float Angle;
 /* USER CODE BEGIN PV */
 uint8_t g_gray_raw = 0;   // 灰度传感器原始状态掩码
 int32_t g_gray_pos = 0;   // 灰度传感器质心误差值
+ICM45686_HandleTypeDef g_gyro;
+PID_TypeDef g_pid_track;
+RPiVision_HandleTypeDef g_rpi_vision;
+int32_t g_base_speed = 6000; // 基础速度 (满速 12000)
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -111,6 +118,33 @@ UI_KeyEvent_e Scan_UI_Buttons(void) {
     }
 
     return event;
+}
+
+// 提取的陀螺仪数据更新与滤波函数 (需放在 while(1) 中调用)
+void Gyro_Update_Routine(void) {
+    static uint32_t last_gyro_tick = 0;
+    uint32_t now = HAL_GetTick();
+    if (now - last_gyro_tick >= 10) // 100Hz
+    {
+        float dt = (now - last_gyro_tick) / 1000.0f;
+        last_gyro_tick = now;
+
+        if (ICM45686_Update(&g_gyro, dt) == HAL_OK)
+        {
+            float new_angle = g_gyro.data.yaw_angle_deg;
+
+            // 对航向角进行一阶低通滤波，注意处理 360 度过零点跳变问题
+            float diff = new_angle - Angle;
+            if (diff > 180.0f) diff -= 360.0f;
+            else if (diff < -180.0f) diff += 360.0f;
+
+            Angle += 0.2f * diff; // 滤波系数(可调): 0.2
+
+            // 限制范围在 0~360
+            if (Angle >= 360.0f) Angle -= 360.0f;
+            else if (Angle < 0.0f) Angle += 360.0f;
+        }
+    }
 }
 /* USER CODE END 0 */
 
@@ -166,7 +200,7 @@ int main(void)
   MX_USART2_UART_Init();
   MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
-  SEGGER_RTT_Init(); 
+  SEGGER_RTT_Init();
 
   u8g2Init(&u8g2);
   UI_Init(&g_ui);
@@ -176,10 +210,37 @@ int main(void)
 
   // 初始化编码器及测速中断
   Encoder_Init();
+
+  // 初始化陀螺仪
+  if (ICM45686_Init(&g_gyro, &hspi1, SPI1_CS_GPIO_Port, SPI1_CS_Pin) == HAL_OK) {
+      SEGGER_RTT_printf(0, "Gyro Init Success\r\n");
+  } else {
+      SEGGER_RTT_printf(0, "Gyro Init Failed\r\n");
+  }
+  
+  // 初始化循迹PID控制器 (Kp, Ki, Kd, 最大输出, 积分限幅)
+  // PID_Init(&g_pid_track, 0.00066f, 0.0f, 0.000006f, 6000.0f, 1000.0f);
+  PID_Init(&g_pid_track, 0.006f, 0.0f, 0.000008f, 6000.0f, 1000.0f);
+  // 初始化任务框架状态
+  Task_Init();
+  
+  // 初始化 Fashion Star UART 舵机底层结构 (防止传入 NULL 导致 HardFault)
+  extern void User_Uart_Init(UART_HandleTypeDef *huartx);
+  extern UART_HandleTypeDef huart7;
+  User_Uart_Init(&huart7);
+  
+  // 开启 USART2 接收中断（PA3 RX，用于钢球 PID 调参）
+  HAL_UART_Receive_IT(&huart2, &uart2_rx_byte, 1);
+
+  // UART4（PC11 RX）中断接收树莓派二进制视觉数据。
+  if (RPiVision_Init(&g_rpi_vision, &huart4) != HAL_OK) {
+      SEGGER_RTT_printf(0, "RPi Vision UART4 Init Failed\r\n");
+  }
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+	FSUS_SetServoAngle(&FSUS_Usart, 0, 5.0f, 100, 0);
   while (1)
   {
     // 1. 非阻塞按键检测
@@ -188,19 +249,62 @@ int main(void)
     // 2. 响应按键并更新状态
     UI_ProcessKey(&g_ui, key);
 
-    // 3. U8G2 画面渲染
+    // USART2 中断只负责组包，浮点解析和钢球 PID 更新放在前台完成
+    User_Uart_Process();
+
+    // UART4 中断只收字节；前台完成帧同步、CRC 和钢球位置归一化。
+    RPiVision_Process(&g_rpi_vision);
+    if (g_rpi_vision.vision_ready) {
+        int32_t target_x_q8;
+        int32_t error_x_q8;
+        float normalized_position;
+        /*
+         * vision_ready 已表示 DMA 收到并解析出一帧新数据，不再把相机端
+         * 的 FRESH 位作为硬条件；部分连续跟踪帧会清除此位，否则 PID
+         * 会在有效/无效之间反复切换，表现为舵机轻微抖动却不持续纠偏。
+         */
+        uint16_t required_flags = RPI_FLAG_TRACK_ALIVE |
+                                  RPI_FLAG_RUN_ACTIVE |
+                                  RPI_FLAG_TARGET_VALID;
+
+        g_rpi_vision.vision_ready = 0U;
+        if ((g_rpi_vision.vision.flags & required_flags) == required_flags) {
+            target_x_q8 = g_rpi_vision.vision.target_x_q8;
+            /* README 协议定义：控制误差 = 目标位置 - 钢球位置。 */
+            error_x_q8 = target_x_q8 - g_rpi_vision.vision.ball_x_q8;
+
+            /*
+             * target_x 是图像中的目标中心；用中心到左边缘的距离
+             * 归一化，使画面中心为 0、左右边缘约为 -1/+1。
+             */
+            if (target_x_q8 < 0) target_x_q8 = -target_x_q8;
+            if (target_x_q8 > 0) {
+                normalized_position = (float)error_x_q8 /
+                                      (float)target_x_q8;
+                Task3_SetBallPosition(normalized_position);
+            } else {
+                Task3_InvalidateBallPosition();
+            }
+        } else {
+            Task3_InvalidateBallPosition();
+        }
+    }
+
+    // 3. 以 100Hz 更新陀螺仪航向角，供任务 3 的角度环使用
+    Gyro_Update_Routine();
+
+    // 4. U8G2 画面渲染
     UI_Update(&u8g2, &g_ui);
 
-    // 4. 读取灰度传感器数据
-    g_gray_raw = Gray_ReadRaw();
-    g_gray_pos = Gray_ReadPosition();
+    // 5. 任务执行调度
+    Task_Routine();
 
-    HAL_GPIO_TogglePin(LED_B_GPIO_Port, LED_B_Pin);
+    HAL_GPIO_TogglePin(LED_R_GPIO_Port, LED_R_Pin);
 
-  	// 设置左电机正转，速度步数 6000 (相当于50%)
-  	//DRV8870_SetSpeed(&g_motorL, 2500);
-  	// 设置右电机正转，速度步数 12000 (满速100%)
-  	//DRV8870_SetSpeed(&g_motorR, 1000);
+    
+    // 实际下发角度 = 扫角值 + 零点偏移(6.0f)
+
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -254,33 +358,20 @@ void SystemClock_Config(void)
                               |RCC_CLOCKTYPE_D3PCLK1|RCC_CLOCKTYPE_D1PCLK1;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.SYSCLKDivider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.AHBCLKDivider = RCC_HCLK_DIV2;
-  RCC_ClkInitStruct.APB3CLKDivider = RCC_APB3_DIV2;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_APB1_DIV2;
-  RCC_ClkInitStruct.APB2CLKDivider = RCC_APB2_DIV2;
-  RCC_ClkInitStruct.APB4CLKDivider = RCC_APB4_DIV2;
+  RCC_ClkInitStruct.AHBCLKDivider = RCC_HCLK_DIV4;
+  RCC_ClkInitStruct.APB3CLKDivider = RCC_APB3_DIV1;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_APB1_DIV1;
+  RCC_ClkInitStruct.APB2CLKDivider = RCC_APB2_DIV1;
+  RCC_ClkInitStruct.APB4CLKDivider = RCC_APB4_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_4) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
   {
     Error_Handler();
   }
 }
 
 /* USER CODE BEGIN 4 */
-/**
-  * @brief TIM7 中断回调函数
-  * @param htim: TIM句柄指针
-  * @retval None
-  */
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
-{
-    // 判断是否为TIM7中断
-    if (htim->Instance == TIM7)
-    {
-      Encoder_Update(); // 更新编码器速度 (10ms)
-      HAL_GPIO_TogglePin(LED_B_GPIO_Port, LED_B_Pin);
-    }
-}
+
 
 
 /* 舵机通讯检测 */

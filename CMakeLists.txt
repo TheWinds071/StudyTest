@@ -59,6 +59,10 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
         Drivers/BSP/Src/ring_buffer.c
         Drivers/BSP/Src/user_uart.c
         Drivers/BSP/Src/question.c
+        Drivers/BSP/Src/icm45686.c
+        Drivers/BSP/Src/pid.c
+        Drivers/pi/Src/rpi_vision.c
+        Core/Src/tasks.c
 )
 
 # Add include paths
@@ -67,6 +71,7 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
         Drivers/BSP/OLED
         Drivers/BSP/Inc
         Drivers/BSP/RTT
+        Drivers/pi/Inc
 )
 
 # Add project symbols (macros)
@@ -81,4 +86,9 @@ list(REMOVE_ITEM CMAKE_C_IMPLICIT_LINK_LIBRARIES ob)
 target_link_libraries(${CMAKE_PROJECT_NAME}
     stm32cubemx
     # Add user defined libraries
+)
+
+# Relink whenever the memory layout changes.
+set_property(TARGET ${CMAKE_PROJECT_NAME} APPEND PROPERTY LINK_DEPENDS
+    "${CMAKE_SOURCE_DIR}/STM32H750XX_FLASH.ld"
 )

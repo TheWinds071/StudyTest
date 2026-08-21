@@ -22,7 +22,7 @@ void DRV8870_Init(void) {
     g_motorL.in2_channel = TIM_CHANNEL_2;
     g_motorL.control_mode = DRV8870_MODE_DUAL_PWM;
     g_motorL.decay_mode = DRV8870_DECAY_SLOW;
-    g_motorL.pwm_period = 12000;
+    g_motorL.pwm_period = 1000;
     g_motorL.is_reversed = 0;
     
     HAL_TIM_PWM_Start(g_motorL.htim, g_motorL.in1_channel);
@@ -38,7 +38,7 @@ void DRV8870_Init(void) {
     g_motorR.in2_channel = TIM_CHANNEL_4;
     g_motorR.control_mode = DRV8870_MODE_DUAL_PWM;
     g_motorR.decay_mode = DRV8870_DECAY_SLOW;
-    g_motorR.pwm_period = 12000;
+    g_motorR.pwm_period = 1000;
     g_motorR.is_reversed = 1;
 
     HAL_TIM_PWM_Start(g_motorR.htim, g_motorR.in1_channel);

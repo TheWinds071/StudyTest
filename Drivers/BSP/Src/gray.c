@@ -1,12 +1,19 @@
 #include "gray.h"
 
-// 将硬件引脚映射到物理上的从左到右，并赋予位置权重
+// 根据实际硬件接线的乱序情况，将物理位置从左到右重新映射，并赋予位置权重
+// static const GraySensor_TypeDef gray_sensors[GRAY_SENSOR_COUNT] =
+// {
+//     {GRAY_R2_PORT, GRAY_R2_PIN,  2000},  // 物理最左探头 (PC8)
+//     {GRAY_L2_PORT, GRAY_L2_PIN,  1000},  // 物理左中探头 (PA8)
+//     {GRAY_R1_PORT, GRAY_R1_PIN, -1000},  // 物理右中探头 (PA11)
+//     {GRAY_L1_PORT, GRAY_L1_PIN, -2000}   // 物理最右探头 (PA10)
+// };
 static const GraySensor_TypeDef gray_sensors[GRAY_SENSOR_COUNT] =
 {
-    {GRAY_L2_PORT, GRAY_L2_PIN,  2000},  // 最左 (R3)
-    {GRAY_L1_PORT, GRAY_L1_PIN,  1000},  // 左中 (R2)
-    {GRAY_R1_PORT, GRAY_R1_PIN, -1000},  // 右中 (R1)
-    {GRAY_R2_PORT, GRAY_R2_PIN, -2000}   // 最右 (M)
+    {GRAY_L1_PORT, GRAY_L1_PIN,  2000},  // 物理最左探头 (PC8)
+    {GRAY_R2_PORT, GRAY_R2_PIN,  1000},  // 物理左中探头 (PA8)
+    {GRAY_R1_PORT, GRAY_R1_PIN, -1000},  // 物理右中探头 (PA11)
+    {GRAY_L2_PORT, GRAY_L2_PIN, -2000}   // 物理最右探头 (PA10)
 };
 
 // 静态变量，用于在完全丢线（全白）时保持最后一次的误差状态，引导小车找回黑线
